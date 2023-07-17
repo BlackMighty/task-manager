@@ -1,0 +1,18 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: your_name
+      changes:
+        - createTable:
+            tableName: counter
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: value
+                  type: integer
+                  defaultValue: 0
